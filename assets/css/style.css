@@ -15,7 +15,9 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    margin-top: 6rem;
     padding: 0;
+    background-color: rgba(255, 255, 255, 0.877);
     font-size: var(--font-size);
     font-family: var(--font-family);
     color: var(--grey500);
@@ -27,13 +29,11 @@ main {
 
 .container {
     padding: 1rem;
-    max-width: 450px;
-    height: auto;
-    overflow: hidden;
+    max-width: auto;
+    height: 500px;
     margin: 0 auto;
     border-radius: 6px;
     box-shadow: 0 0 10px var(--grey400);
-    
 }
 
 .title {
@@ -63,11 +63,15 @@ main {
 .feature {
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    padding: 0.5rem;
-    margin-bottom: 2rem;
-    height: 200px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    height: 250px;
     display: flex;
     flex-direction: column;
+}
+
+.calculator-feature::after {
+  display: none;
 }
 
 .feature h2 {
@@ -81,7 +85,7 @@ main {
 .icon {
     width: 60px;
     height: 60px;
-    margin: 1rem;
+    margin: auto 1rem;
     align-self: flex-end;
 }
 
@@ -111,7 +115,7 @@ footer {
     text-decoration: none;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 56.25em) {
     
     .container{
         max-width: 100%;
